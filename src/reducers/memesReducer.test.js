@@ -13,9 +13,7 @@ describe('memes reducer', () => {
         bottom: 'This is another thing'
       }
     };
-
     const newState = reducer(state, action);
-
     expect(newState).toEqual([
       {
         _id: '12345',
@@ -37,9 +35,7 @@ describe('memes reducer', () => {
         bottom: 'This is another thing'
       }]
     };
-
     const newState = reducer(state, action);
-
     expect(newState).toEqual([{
       _id: '12345',
       top: 'This is a thing',
