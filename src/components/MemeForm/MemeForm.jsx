@@ -4,7 +4,6 @@ import { addMeme } from '../../actions/memeActions';
 
 const MemeForm = () => {
   const dispatch = useDispatch();
-
   const [top, setTop] = useState('');
   const [image, setImage] = useState('');
   const [bottom, setBottom] = useState('');
