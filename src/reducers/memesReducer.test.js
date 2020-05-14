@@ -1,5 +1,5 @@
 import reducer from './memesReducer';
-import { addMeme, setMemes, SET_MEMES, ADD_MEME } from '../actions/memeActions';
+import { SET_MEMES, ADD_MEME } from '../actions/memeActions';
 
 describe('memes reducer', () => {
   it('handle the ADD_MEME action', () => {
@@ -13,13 +13,7 @@ describe('memes reducer', () => {
         bottom: 'This is another thing'
       }
     };
-    // const action = addMeme({
-    //   _id: '12345',
-    //   top: 'This is a thing',
-    //   image: 'http://placekitten.com/100/100',
-    //   bottom: 'This is another thing'
-    // });
-    console.log(action);
+
     const newState = reducer(state, action);
 
     expect(newState).toEqual([
@@ -43,12 +37,6 @@ describe('memes reducer', () => {
         bottom: 'This is another thing'
       }]
     };
-    // const action = setMemes([{
-    //   _id: '12345',
-    //   top: 'This is a thing',
-    //   image: 'http://placekitten.com/100/100',
-    //   bottom: 'This is another thing'
-    // }]);
 
     const newState = reducer(state, action);
 
