@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Meme from './Meme';
 import { getMemes } from '../../selectors/memesSelectors';
 import { setMemes } from '../../actions/memeActions';
-
+import styles from './Memes.css';
 
 const Habits = () => {
   const dispatch = useDispatch();
@@ -14,7 +14,7 @@ const Habits = () => {
   }, []);
 
   const memeElements = memes.map(meme => (
-    <li key={meme._id}>
+    <li key={meme._id} className={styles.Memes}>
       <Meme {...meme}  />
     </li>
   ));

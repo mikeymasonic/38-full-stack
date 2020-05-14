@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './Meme.css';
 
 const Meme = ({ top, image, bottom }) => (
-  <section>
-    <p>{top}</p>
+  <section className={styles.Meme}>
+    <p className={styles.topcenter}>{top}</p>
     <img src={image}/>
-    <p>{bottom}</p>
+    <p className={styles.bottomcenter}>{bottom}</p>
   </section>
 );
 
