@@ -13,7 +13,7 @@ const Habits = () => {
     dispatch(setMemes());
   }, []);
 
-  const habitElements = memes.map(meme => (
+  const memeElements = memes.map(meme => (
     <li key={meme._id}>
       <Meme {...meme}  />
     </li>
@@ -21,7 +21,7 @@ const Habits = () => {
 
   return (
     <ul>
-      {habitElements}
+      {memeElements}
     </ul>
   );
 };
