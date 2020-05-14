@@ -7,6 +7,7 @@ const MemeForm = () => {
   const [top, setTop] = useState('');
   const [image, setImage] = useState('');
   const [bottom, setBottom] = useState('');
+  
   const handleSubmit = event => {
     event.preventDefault();
     dispatch(addMeme({ top, image, bottom }));
