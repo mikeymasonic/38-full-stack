@@ -1,0 +1,28 @@
+.Meme {
+  position: relative;
+  text-align: center;
+  margin: 10px;
+
+  img {
+    display: block;
+    margin: auto;
+    width: 100%;
+  }
+
+  .topcenter {
+    position: absolute;
+    top: 0.25vw;
+  }
+
+  .bottomcenter {
+    position: absolute;
+    bottom: 0.25vw;
+  }
+
+  p {
+    margin: 0;
+    width: 100%;
+    font-size: 2rem;
+    font-weight: bolder;
+  }
+}
